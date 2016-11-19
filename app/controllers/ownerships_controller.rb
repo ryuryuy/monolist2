@@ -18,7 +18,6 @@ class OwnershipsController < ApplicationController
       @item.small_image     = item['smallImageUrls'].first['imageUrl']
       @item.medium_image    = item['mediumImageUrls'].first['imageUrl']
       @item.large_image     = item['mediumImageUrls'].first['imageUrl'].gsub('?_ex=128x128', '')
-      @item.detail_page_url = item['itemUrl']
       @item.save!
     end
 
