@@ -39,9 +39,9 @@ class OwnershipsController < ApplicationController
     #render '_unwant' if logged_in?
     #render '_unhave' if logged_in?
     if params[:type] == 'Want'
-      current_user.unwant(item)
+      current_user.unwant(@item)
     elsif params[:type] =='Have'
-      current_user.unhave(item)
+      current_user.unhave(@item)
     end
     # TODO 紐付けの解除。 
     # params[:type]の値にHave itボタンが押された時には「Have」,
