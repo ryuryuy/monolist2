@@ -19,7 +19,7 @@
           <p class="title">
             <% #TODO 商品タイトル %>
             <%= link_to item['itemName'],item['itemUrl'] %>
-            <%= item['itemPrice'] %>
+            <%#= item['itemPrice'] %>
             <%#= link_to item['itemUrl'], item['itemName'] %>
             <!--仮タイトル-->
           </p>
@@ -36,6 +36,8 @@
                       :item_code => "have-#{item['itemCode']}",
                       :remote => true,
                       :method => :post %>
+                      
+                                  
         </div>
       </div>
     <% end %>
