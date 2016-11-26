@@ -4,6 +4,11 @@
       <div class="item-box">
         <div class="image">
           <div class="img-wrap">
+             <meta charset="utf-8">
+            <% content_for :extend_menu do %>
+            title:<%= @user%> - monolist
+            description:<%= @user%>のモノページ。[ユーザー名]の欲しいモノ、持ってるモノを表示しています。
+            <% end %>
             <% #TODO 商品画像 %>
             <%#= image_tag("no-image.png" , alt: item['itemName']) %>
             <!--0：商品画像無し-->
