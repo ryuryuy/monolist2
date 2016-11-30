@@ -1,8 +1,18 @@
-<%= @title %>
-
-<% @items.each.with_index(1) do |item, index| %>
- 
-  <%= index %>位
-  <%= item.title %><br>
+<div class="container">
+ <div class="container-inner inner-default clearfix">
+  <p class="title">
+    <%= @title %>
+  </p>
   
-<% end %>
+  <% @items.each.with_index(1) do |item, index| %>
+ 
+  <div class="detail">
+    <p class="title">
+     <%= index %>位
+     <%= item.title %>
+    </p>
+  </div>
+  <% end %>
+  
+ </div>
+</div>
