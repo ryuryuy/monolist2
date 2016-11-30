@@ -1,0 +1,8 @@
+<%= @title %>
+
+<% @items.each.with_index(1) do |item, index| %>
+ 
+  <%= index %>位
+  <%= item.title %><br>
+  
+<% end %>
